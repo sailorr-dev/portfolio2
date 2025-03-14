@@ -1,0 +1,231 @@
+/* Reset default styles and set base font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 100px;
+    background-color: rgba(238, 54, 41, 0.72);
+    color: rgb(255, 218, 98);
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(50px);
+}
+
+header h1 {
+    font-size: 8rem;
+}
+
+header h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Fight Grid */
+.fight-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Fight Card */
+.fight-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 15px;
+    text-align: center;
+    background-color: #fff;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.fight-card img {
+    max-width: 95%;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fight-card img:hover {
+    transform: scale(1.03);
+}
+
+.fight-card p {
+    flex-grow: 1;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+/* Body Styling */
+body {
+    background-color: black;
+    color: white;
+}
+
+/* Analyst Section */
+.analystandiseperator {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    font-size: 20px;
+}
+
+.analyst-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.analyst-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 15px;
+    text-align: center;
+    background-color: #fff;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Email Form */
+.email-form {
+    width: 300px;
+    justify-content: center;
+    margin: 40px auto;
+    margin-top: 60px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 15px;
+    background-color: orange;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: whitesmoke;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .fight-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .fight-grid {
+        grid-template-columns: 1fr;
+    }
+    header {
+        padding: 50px;
+    }
+    header h1 {
+        font-size: 4rem;
+    }
+    header h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        padding: 30px;
+    }
+    header h1 {
+        font-size: 3rem;
+    }
+    header h2 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Ensure images scale correctly */
+img {
+    max-width: 100%;
+    height: auto;
+}
+/*navbar*/
+.navbar{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(43, 43, 43, 0.9);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 1000; }
+.logo{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: yellow;
+    text-decoration: none;
+    letter-spacing: 1px; }
+.nav-links{
+    display: flex;
+    gap: 2rem; }
+.nav-links a{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.nav-links a:hover {
+    color: yellow; }
+.mobile-menu-btn{
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #ffffff;}
+/*Responsive*/
+@media(max-width: 768px){
+    .nav-links{
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        flex-direction: column;
+        background: white;
+        width: 70%;
+        height: 100vh;
+        padding: 2rem;
+        box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+        transition: right 0.3s ease;
+        gap: 1rem;
+    }
+    .nav-links.acitve{
+    right: 0;
+    }
+
+    .mobile-menu-btn {
+    display: block;
+    }
+}
