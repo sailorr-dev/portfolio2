@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Nature & Hiking</title>
+    <link rel="stylesheet" href="styles/aboutme-styles.css">
+</head>
+<body>
+    <!-- Sticky Navigation Menu -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">2025 UFC PICKS</a>
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About Me</a>
+            <a href="citations.html">Citations</a>
+        </div>
+        <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+    </nav>
+
+    <!-- About Me Content -->
+    <div class="about-container">
+        <div class="about-header">
+            <h1>About Me</h1>
+        </div>
+        <div class="about-content">
+            <div class="profile-image">
+                <div class="image-overlay-container">
+                    <img src="images/sailorpfp.jpg" alt="Sailor Profile Picture" class="profile-img">
+                    <div class="image-overlay">
+                        <div class="overlay-text">Sailor Raitses</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bio">
+                <h2>Sailor Raitses</h2>
+                <p>
+                    Hi, I’m Sailor Raitses, a freshman at the University of Oregon. 
+                    I first tried coding in freshman year of high school, but I’m just now starting to really enjoy it. 
+                    It’s been a while since I’ve felt this excited about a subject, and I’m looking forward to learning more. 
+                    I’m undeclared right now, but I’m planning on pursuing something in STEM, maybe web development.
+                </p>
+                
+                <p>
+                    When I’m not coding or in class, I like to go on walks, either alone or with friends. 
+                    It helps me relax and clear my mind. 
+                    I also enjoy working out and have recently gotten into my high school passion of modeling/photography, which has been a great way to make new connections.
+                </p>
+
+                <p>
+                    I’m excited about what’s ahead and can’t wait to keep growing, both professionally and personally. 
+                    I hope in my following terms and years at UO I get more experienced and confident with this type of subject.
+                </p>
+                
+                <a href="resume2.html" class="resume-btn">View My Resume</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Sailor's UFC Picks - Sailor Raitses</p>
+    </footer>
+
+    <script>
+        // Toggle mobile menu
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+        
+        // Close mobile menu when a nav link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navLinks').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
