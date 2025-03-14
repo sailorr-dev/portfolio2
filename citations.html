@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Source Citations - Nature & Hiking</title>
+    <link rel="stylesheet" href="styles/citations-styles.css">
+</head>
+
+<body>
+    <!-- Sticky Navigation Menu -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">2025 UFC PICKS</a>
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="aboutme.html" class="resume-btn">About Me</a>
+            <a href="citations.html">Citations</a>
+        </div>
+        <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+    </nav>
+
+    <!-- Citations Content -->
+    <div class="citations-container">
+        <div class="citations-header">
+            <h1>Source Citations</h1>
+        </div>
+
+        <div class="citations-content">
+            <div class="citations-section">
+                <h2>Image Sources</h2>
+                <ul class="citations-list">
+                    <li><a href="https://example.com/" target="_blank">Mock UFC 311</a> - Makhachev vs. Moicano by
+                        Photographer Name</li>
+                    <li><a href="https://example.com/" target="_blank">Mock UFC 312</a> - Du Plessis vs. Strickland 2 by
+                        Photographer Name</li>
+                    <li><a href="https://example.com/" target="_blank">Mock UFC 313</a> - Pereira vs. Ankalaev by
+                        Photographer Name</li>
+                    <li><a href="https://example.com/" target="_blank">Mock UFC 314</a> - Gaethje Vs Hooker by
+                        Photographer Name</li>
+                    <li><a href="https://example.com/" target="_blank">Mock UFC 315</a> - Volkanovski vs. Lopes by
+                        Photographer Name</li>
+                    <li><a href="https://example.com/" target="_blank">Mock UFC 315</a> - Muhammad vs. Della Maddalena by
+                        Photographer Name</li>
+                </ul>
+            </div>
+
+            <div class="citations-section">
+                <h2>Content References</h2>
+                <ul class="citations-list">
+                    <li><a href="https://nypost.com/2025/01/18/betting/ufc-311-predictions-full-main-card-prelim-odds-picks/    " target="_blank">311 Analyst</a> - UFC 311 predictions: Full main card prelim odds, picks for Makhachev-Moicano
+                        By Erich Richter</li>
+                    <li><a href="https://www.oregonlive.com/betting/2025/02/ufc-312-predictions-picks-and-best-bets.html" target="_blank">312 Analyst</a> - Our expert UFC 312 predictions, picks best bets for Du Plessis vs. Strickland 2
+                        by Author Name</li>
+                    <li><a href="https://mmapredictions.com/ufc-313/" target="_blank">313 Analyst</a> - UFC 313 Predictions, Betting Odds & Parlay
+                        by Daryl Curnow</li>
+                    <li><a href="https://www.onlinesportsbetting.net/sports-betting-news/ufc-picks/best-ufc-313-bets-justin-gaethje-vs-dan-hooker.html" target="_blank">313 Analyst</a> - Best UFC 313 Bets: Justin Gaethje vs. Dan Hooker by
+                        Dan Favale</li>
+                     <li><a href="https://verdictmma.com/fight-forum/10244" target="_blank">314 Analyst</a> - 
+                        Volkanovski v Lopes Prediction: Like for the king 🇦🇺 Dislike for Lopes 🇧🇷 by
+                        TairaSZN, Verdict</li>
+                    <li><a href="https://medium.com/@michael34cox12/why-jack-della-maddalena-will-beat-belal-muhammed-ufc-315-fight-news-early-thoughts-848f533894de" target="_blank">315 Analyst</a> - 
+                        Why Jack Della Maddalena Will Beat Belal Muhammed | UFC 315 Fight News & Early Thoughts by
+                        Michael Cox</li>                        
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Sailor's UFC Picks - Sailor Raitses</p>
+    </footer>
+
+    <script>
+        // Toggle mobile menu
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        // Close mobile menu when a nav link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navLinks').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
