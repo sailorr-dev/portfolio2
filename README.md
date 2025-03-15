@@ -1,6 +1,6 @@
 # portfolio2
 Every page of my website has a sticky nav bar at the top with has a text logo as well as links/button to return to a desired page.
-Every page of my website has a flex box to copywriter myself.
+Every page of my website has a flex box to copywriter myself, except the about me because I like everything centered on my description.
 
 The “Home” page of my website starts with a header introducing the cite. The page is a layout of my picks for the first 6 main card UFC fights of 2025 inside flex-boxes. Below are other analyses of each fight from someone else online with links to their respective cites. At the bottom is a form to explain why you disagree with me, if so. Submitting it opens up default email for user.
 
